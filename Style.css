@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #c0c0c0;
+}
+
+/* HEADER */
+header {
+    background: #4a90e2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #333;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    border: 3px solid #000;
+}
+
+header h1 {
+    color: #000;
+    font-size: 24px;
+}
+
+/* NAV */
+nav {
+    background: #5ba3e8;
+    padding: 10px;
+    border: 2px solid #333;
+    border-top: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav li {
+    background: #4a90e2;
+    border: 2px solid #333;
+    padding: 10px 30px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+    background: #d0d0d0;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #333;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #000;
+}
+
+/* SECCIÓN INICIO - Azul */
+#inicio {
+    background: #5ba3e8;
+}
+
+#inicio table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+#inicio td {
+    background: #7bb3ed;
+    border: 2px solid #333;
+    padding: 15px;
+    width: 33%;
+    vertical-align: top;
+}
+
+#inicio article h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#inicio .noticia {
+    background: #9ecbf5;
+    padding: 10px;
+    border: 1px solid #333;
+    margin-top: 10px;
+}
+
+#inicio .noticia h4 {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Video y Audio */
+.media {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+video, audio {
+    width: 48%;
+    background: #a0a0a0;
+    border: 2px solid #333;
+}
+
+/* SECCIÓN DEPORTES - Gris */
+#deportes {
+    background: #a0a0a0;
+}
+
+#deportes table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+#deportes td {
+    background: #c0c0c0;
+    border: 2px solid #333;
+    padding: 15px;
+    width: 33%;
+    vertical-align: top;
+}
+
+#deportes article {
+    background: #d0d0d0;
+    padding: 10px;
+}
+
+#deportes .resumen {
+    background: #e0e0e0;
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* SECCIÓN NEGOCIOS - Verde */
+#negocios {
+    background: #2e8b8b;
+}
+
+#negocios table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+#negocios td {
+    background: #3ba3a3;
+    border: 2px solid #333;
+    padding: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#negocios article {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+#negocios article h3,
+#negocios article > p {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+#negocios .noticia {
+    background: #4db8b8;
+    padding: 15px;
+    border: 1px solid #333;
+    flex-grow: 1;
+}
+
+#negocios .noticia h4 {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
