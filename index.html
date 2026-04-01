@@ -1,15 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>El Faro - Periodico</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     
-<div>
+    <!-- HEADER solo contiene logo y h1 -->
+    <header>
+        <img src="https://img.freepik.com/vector-premium/pintura-faro-cielo-azul-ola-fondo_646696-5260.jpg?semt=ais_incoming&w=740&q=80" alt="Logo El Faro">
+        <h1>Bienvenidos a periodico el Faro</h1>
+    </header>
 
-</div>
+    <!-- NAV  -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#deportes">DEPORTES</a></li>
+            <li><a href="#negocios">NEGOCIOS</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN contiene las 3 secciones -->
+    <main>
+        
+        <!-- SECCIÓN INICIO -->
+        <section id="inicio">
+            <h2>Seccion Inicio - Noticias generales</h2>
+            
+            <table>
+                <tr>
+                    <!-- Noticia 1 -->
+                    <td>
+                        <article>
+                            <h3>Recinstruccion del Liceo Bicentenario Maritimo</h3>
+                            <p>Educacion</p>
+                            <div class="noticia">
+                                <p>El Ministerio de Educación invertió $1.037 millones en la conservación del Liceo Bicentenario Marítimo de Valparaíso. La comunidad educativa celebra la reapertura de espacios tras años de deterioro. "Claramente un cambio en la infraestructura nos beneficia a todos", señaló la directora del establecimiento.</p>
+                                <h4>Fuente: soychile.cl</h4>
+                            </div>
+                        </article>
+                    </td>
+                    <!-- Noticia 2 -->
+                    <td>
+                        <article>
+                            <h3>Alerta Roja por Incendio en Santo Domingo</h3>
+                            <p>Emergencias</p>
+                            <div class="noticia">
+                                <p>Senapred activó Alerta Roja por incendio forestal en Santo Domingo que afectó al menos 200 hectáreas. Se solicitó evacuación de los sectores San Guillermo, Media Luna de San Enrique y Horizonte del Mar. Las autoridades mantienen monitoreo constante de la situación. </p>
+                                <h4> Fuente: soychile.cl</h4>
+                            </div>
+                        </article>
+                    </td>
+                    <!-- Noticia 3 -->
+                    <td>
+                        <article>
+                            <h3>Exportaciones Regionales Baten Récord</h3>
+                            <p>Economia Regional</p>
+                            <div class="noticia">
+                                <p>La Región de Valparaíso cerró 2024 con exportaciones por US$ 2.233 millones, un aumento del 12,6% respecto al año anterior. Los principales destinos fueron Estados Unidos, China y Reino Unido, generando más de 166.000 empleos directos según ProChile. </p>
+                                <h4>Fuente: ProChile</h4>
+                            </div>
+                        </article>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Video y Audio debajo de la tabla -->
+            <div class="media">
+                <video controls poster="https://www.mineduc.cl/wp-content/uploads/2024/03/liceo-maritimo-valparaiso.jpg">
+                <source src=https://www.youtube.com/watch?v=WFmIBPs8hvY type="video/mp4">
+                <p>Tu navegador no soporta video HTML5. 
+                 <a href="https://www.youtube.com/watch?v=WFmIBPs8hvY" target="_blank">Ver en YouTube</a>
+                </p>
+            </video>
+
+                <audio controls>
+                <source src="https://www.biobiochile.cl/noticias/2024/03/15/audio-liceo-maritimo.mp3" type="audio/mpeg">
+                <p>Tu navegador no soporta audio HTML5. 
+                <a href="https://www.biobiochile.cl">Escuchar en BioBioChile</a>
+                </p>
+                </audio>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN DEPORTES -->
+        <section id="deportes">
+            <h2>Seccion Deportes</h2>
+            
+            <table>
+                <tr>
+                    <td>
+                        <article>
+                            <h3>Everton vs Limache en Sausalito</h3>
+                            <p>Fútbol Profesional</p>
+                            <div class="resumen">
+                                <p>Everton de Viña del Mar recibió a Deportes Limache en el Estadio Sausalito por la Copa de la Liga. El encuentro marcó el retorno de las grandes jornadas futbolísticas a la Ciudad Jardín tras la tragedia de febrero 2024.  </p>
+                          </div>
+                        </article>
+                    </td>
+                     <td>
+                        <article>
+                            <h3>Los Cóndores Jugarán en Sausalito</h3>
+                            <p>Rugby Internacional</p>
+                            <div class="resumen">
+                                <p>RLa selección chilena de rugby "Los Cóndores" ejercerá su localía en el Estadio Sausalito de Viña del Mar durante julio, enfrentándose a Hong Kong como parte de su preparación internacional.</p>
+                            </div>
+                        </article>
+                    </td>
+                     <td>
+                        <article>
+                            <h3>Itaú Medio Maratón 2026</h3>
+                            <p>Running</p>
+                            <div class="resumen">
+                                <p>Viña del Mar se prepara para el Itaú Medio Maratón 2026, que reunirá a miles de corredores en un circuito costero que destacará la belleza de la Ciudad Jardín y su reactivación turística.</p>
+                            </div>
+                        </article>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- SECCIÓN NEGOCIOS -->
+        <section id="negocios">
+            <h2>Seccion Negocios</h2>
+            
+            <table>
+                <tr>
+                    <td>
+                        <article>
+                            <h3>Subsidios Sercotec para Mipymes Afectadas</h3>
+                            <p>Reconstrucción Económica</p>
+                            <div class="noticia">
+                                <p>Más de 100 Mipymes afectadas por los incendios de febrero 2024 firmaron contratos con Sercotec para recibir subsidios de hasta $10 millones por empresa. El programa contempla una inversión total de $3.800 millones para recuperar la actividad productiva de la región. </p>
+                                <h4>Fuenta: SERCOTEC</h4>
+                            </div>
+                        </article>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <article>
+                            <h3>Valparaíso Industria Circular</h3>
+                            <p>Economía Sustentable</p>
+                            <div class="noticia">
+                                <p>Un estudio reveló que se podrían generar más de 200.000 oportunidades de negocio aprovechando los residuos de empresas en la región. La iniciativa busca insertar a las pymes en la economía circular mediante capacitaciones y alianzas estratégicas</p>
+                                <h4>Fuente: plataforma-industria circular</h4>
+                            </div>
+                        </article>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <article>
+                            <h3>Empresas Audiovisuales en Cannes</h3>
+                            <p>Economía Creativa</p>
+                            <div class="noticia">
+                                <p>Por primera vez, tres empresas audiovisuales de la Región de Valparaíso participaron en el Marché Du Film de Cannes. El director Pepe Rovano de Totoral Films firmó acuerdos de distribución internacional para su documental "Bastardo: Herencia de un Genocida".</p>
+                                <h4>noticia negocio 3</h4>
+                            </div>
+                        </article>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- FOOTER  -->
+    <footer>
+        <p>© 2026 El Faro - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 </html>
