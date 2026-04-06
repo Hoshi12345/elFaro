@@ -1,12 +1,19 @@
+/* el Faro Periodico*/
+
+/* Reset y configuracion Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Tipografia y fondo*/
+
 body {
-    font-family: Arial, sans-serif;
-    background: #c0c0c0;
+    font-family: 'Playfair Display', serif;/*cambio de fuente*/
+    background: #f5f5f5;/*fondo requerido*/
+    
+    
 }
 
 /* HEADER */
@@ -16,14 +23,14 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
-    border: 2px solid #333;
+    
 }
 
 header img {
     width: 80px;
     height: 80px;
     background: #333;
-    border: 3px solid #000;
+    
 }
 
 header h1 {
@@ -35,8 +42,7 @@ header h1 {
 nav {
     background: #5ba3e8;
     padding: 10px;
-    border: 2px solid #333;
-    border-top: none;
+   /* border-top: none;*/
 }
 
 nav ul {
@@ -48,15 +54,20 @@ nav ul {
 
 nav li {
     background: #4a90e2;
-    border: 2px solid #333;
     padding: 10px 30px;
 }
 
 nav a {
     color: #000;
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration:underline;/* subrayado base*/
+    font-weight:normal;
     font-size: 14px;
+    transition: all 0.3s ease;/*transision para hover*/
+}
+
+nav a:hover{ /* Hover: con negrita y sin subrayado*/
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* MAIN */
@@ -69,7 +80,7 @@ main {
 section {
     margin-bottom: 20px;
     padding: 15px;
-    border: 2px solid #333;
+    
 }
 
 section h2 {
@@ -78,8 +89,7 @@ section h2 {
     color: #000;
 }
 
-/* SECCIÓN INICIO - Azul */
-#inicio {
+/* SECCIÓN INICIO - Azul -con tablas html
     background: #5ba3e8;
 }
 
@@ -94,7 +104,41 @@ section h2 {
     padding: 15px;
     width: 33%;
     vertical-align: top;
+}*/
+/* -- Grid de articulos -*/
+
+.articles-grid {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas*/
+    gap:20px;
 }
+
+/* estilos de articulos*/
+
+article {
+
+    background-color: #ffffff !important;/* forzar blanco*/
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:  0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+/* hover: fondo negro, letra blanca*/
+
+article:hover {
+
+    background-color: #000000 !important;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+article:hover h3,
+article:hover p,
+article:hover h4{
+    color: #ffffff;
+}
+
+/* seccion inicio*/
 
 #inicio article h3 {
     font-size: 14px;
@@ -102,7 +146,7 @@ section h2 {
 }
 
 #inicio .noticia {
-    background: #9ecbf5;
+    background: #ffffff;
     padding: 10px;
     border: 1px solid #333;
     margin-top: 10px;
@@ -114,7 +158,7 @@ section h2 {
     margin-top: 10px;
 }
 
-/* Video y Audio */
+ /*Video y Audio - */
 .media {
     margin-top: 15px;
     display: flex;
@@ -129,29 +173,29 @@ video, audio {
 
 /* SECCIÓN DEPORTES - Gris */
 #deportes {
-    background: #a0a0a0;
+   /* background: #a0a0a0;-eliminar color de seccion*/
 }
 
-#deportes table {
+/*#deportes table { - no usar tablas eliminar
     width: 100%;
     border-spacing: 10px;
 }
 
-#deportes td {
+#deportes td { - no usar celdas
     background: #c0c0c0;
     border: 2px solid #333;
     padding: 15px;
     width: 33%;
     vertical-align: top;
-}
+} */
 
 #deportes article {
-    background: #d0d0d0;
+    background: #ffffff;/* modificado a blanco*/
     padding: 10px;
 }
 
 #deportes .resumen {
-    background: #e0e0e0;
+    background: #ffffff;/* cambiado a blanco*/
     padding: 15px;
     border: 1px solid #333;
     text-align: center;
@@ -160,39 +204,39 @@ video, audio {
 
 /* SECCIÓN NEGOCIOS - Verde */
 #negocios {
-    background: #2e8b8b;
+   /* background: #2e8b8b;- eliminar color */
 }
 
-#negocios table {
+/*#negocios table { -no usar tablas-
     width: 100%;
     border-spacing: 10px;
 }
 
-#negocios td {
+#negocios td { - no usar celdas-
     background: #3ba3a3;
     border: 2px solid #333;
     padding: 15px;
     display: block;
     margin-bottom: 10px;
-}
+}*/
 
 #negocios article {
-    display: flex;
-    gap: 15px;
-    align-items: flex-start;
+    display: block; /*cambio de flex a block para consistencia*/
+    background: #ffffff;
+    padding: 15px;
+   
 }
 
 #negocios article h3,
 #negocios article > p {
-    width: 150px;
-    flex-shrink: 0;
+    width: auto;    /* cambio de 150px a auto*/
 }
 
 #negocios .noticia {
-    background: #4db8b8;
+    background: #ffffff;/* modificado a blanco*/
     padding: 15px;
     border: 1px solid #333;
-    flex-grow: 1;
+    margin-top: 10px;
 }
 
 #negocios .noticia h4 {
@@ -202,8 +246,42 @@ video, audio {
 
 /* FOOTER */
 footer {
-    background: #333;
-    color: white;
+    background: #c9d2d0;/* modificado #333*/
+    color: #31231e;/* modificado de #white; */
     text-align: center;
     padding: 20px;
+}
+
+/* -- Responsividad--*/
+
+/* tablet 2 columnas */
+@media screen and (max-width:992px) {
+    .articles-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* movil 1 columna*/
+@media screen and (max-width: 600px) {
+    .articles-grid {
+        grid-template-columns: 1fr; /* 1 columna*/
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .media {
+        flex-direction: column;
+    }
+
+    video, audio {
+        width:100%;
+    }
 }

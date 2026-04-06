@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro - Periodico</title>
+    <!-- agregando fuente desde google.fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -29,11 +31,10 @@
         <!-- SECCIÓN INICIO -->
         <section id="inicio">
             <h2>Seccion Inicio - Noticias generales</h2>
-            
-            <table>
-                <tr>
+                <div class="articles-grid">
+           
                     <!-- Noticia 1 -->
-                    <td>
+                    
                         <article>
                             <h3>Recinstruccion del Liceo Bicentenario Maritimo</h3>
                             <p>Educacion</p>
@@ -42,9 +43,8 @@
                                 <h4>Fuente: soychile.cl</h4>
                             </div>
                         </article>
-                    </td>
+                    
                     <!-- Noticia 2 -->
-                    <td>
                         <article>
                             <h3>Alerta Roja por Incendio en Santo Domingo</h3>
                             <p>Emergencias</p>
@@ -53,9 +53,9 @@
                                 <h4> Fuente: soychile.cl</h4>
                             </div>
                         </article>
-                    </td>
+                    
                     <!-- Noticia 3 -->
-                    <td>
+                   
                         <article>
                             <h3>Exportaciones Regionales Baten Récord</h3>
                             <p>Economia Regional</p>
@@ -64,11 +64,8 @@
                                 <h4>Fuente: ProChile</h4>
                             </div>
                         </article>
-                    </td>
-                </tr>
-            </table>
-
-            <!-- Video y Audio debajo de la tabla -->
+                    </div>
+                        <!-- Video y Audio debajo de la tabla -->
             <div class="media">
                 <video controls poster="https://www.mineduc.cl/wp-content/uploads/2024/03/liceo-maritimo-valparaiso.jpg">
                 <source src="YTDown.com_YouTube_Media_WFmIBPs8hvY_002_360p.mp4" type="video/mp4">
