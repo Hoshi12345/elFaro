@@ -132,11 +132,15 @@ article:hover {
     cursor: pointer;
 }
 
-article:hover h3,
-article:hover p,
-article:hover h4{
-    color: #ffffff;
+article:hover,
+article:hover *,
+article:hover *::before,
+article:hover *::after {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #333333 !important;
 }
+
 
 /* seccion inicio*/
 
