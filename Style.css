@@ -18,44 +18,49 @@ body {
 
 /* HEADER */
 header {
-    display: flex; /*activa el flexbox*/
-    justify-content: space-between;/*separa derecha de izquierda*/
-    align-items: right; /* centra verticalmente*/
-    padding: 20px; /* espacio interno*/
-    background-color: #4a90e2; /*color de fondo*/
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #4a90e2;
+    min-height: 90px;
 }
 
-/*grupo de la izquierda*/
-.header-left {
-    display: flex; /*logo y titulo en linea*/
-    align-items:center; /*centrados verticalmente*/
-    gap: 15px; /* espacio entre logo y titulo*/
+.header-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.header-left img {
-    width: 80px; /* tamaño del logo*/
-    height:auto;
-    border-radius: 8px; /* bordes redondos del logo*/
-    
+header img {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    border-radius: 8px;
 }
 
-.header-left h1 {
-    margin: 0; /* quita maegen por defecto*/
-    color: #000000; /* color del titulo*/
+header h1 {
+    color: #000;
     font-size: 24px;
+    margin: 0;
 }
-/* actividad semana 4 estilo de reloj */
-#reloj  {
-  align-self: flex-start;/*se alinea arriba*/
-    font-family: 'Courier New', Courier, monospace;
-  font-size: 48px;
-  color: #ffffff;
-  background-color: rgba(0,0,0,0.3); /* fondo semitranspartente*/
 
-  padding: 10px 20px;
- border-radius: 10px;
- margin: 0;
+/* ========== RELOJ EN ÓVALO BLANCO ========== */
+
+#reloj {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 15px 35px;
+    border-radius: 50px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
 }
 
 /* NAV */
