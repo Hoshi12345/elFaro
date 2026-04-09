@@ -13,13 +13,17 @@ function actualizarReloj() {
     minutos = minutos < 10 ? '0' + minutos :minutos;
     segundos = segundos < 10 ? '0'+ segundos : segundos;
 
+    // creacion de variable
+
+    const tiempoString = horas + ':' + minutos + ':' + segundos;
+
     // Actualiza el contenido del HTML
     document.getElementById('reloj').textContent = tiempoString;
 
 }
 
-    // ejecutar la funcion cada segundo
-    setInterval(actualizarReloj, 1000);
-
     // llama a la funcion una vez al inicio para evitar el retraso de 1 segundo
     actualizarReloj();
+
+    // ejecutar la funcion cada segundo
+    setInterval(actualizarReloj, 1000);
