@@ -1,4 +1,4 @@
-function reloj() {
+function actualizarReloj() {
 
     const ahora = new Date();  // obtiene la fecha y las hora actual
 
@@ -19,7 +19,7 @@ function reloj() {
 }
 
     // ejecutar la funcion cada segundo
-    setInterval(actuaslizarReloj, 1000);
+    setInterval(actualizarReloj, 1000);
 
     // llama a la funcion una vez al inicio para evitar el retraso de 1 segundo
-    reloj();
+    actualizarReloj();
