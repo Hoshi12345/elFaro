@@ -20,7 +20,7 @@ body {
 header {
     display: flex; /*activa el flexbox*/
     justify-content: space-between;/*separa derecha de izquierda*/
-    align-items: center; /* centra verticalmente*/
+    align-items: right; /* centra verticalmente*/
     padding: 20px; /* espacio interno*/
     background-color: #4a90e2; /*color de fondo*/
     
