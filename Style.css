@@ -47,11 +47,13 @@ header {
 }
 /* actividad semana 4 estilo de reloj */
 #reloj  {
-  font-family: 'Courier New', Courier, monospace;
+  align-self: flex-start;/*se alinea arriba*/
+    font-family: 'Courier New', Courier, monospace;
   font-size: 48px;
   color: #ffffff;
   background-color: rgba(0,0,0,0.3); /* fondo semitranspartente*/
- padding: 10px 20px;
+
+  padding: 10px 20px;
  border-radius: 10px;
  margin: 0;
 }
