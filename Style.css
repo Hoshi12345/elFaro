@@ -18,23 +18,31 @@ body {
 
 /* HEADER */
 header {
-    background: #4a90e2;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: flex; /*activa el flexbox*/
+    justify-content: space-between;/*separa derecha de izquierda*/
+    align-items: center; /* centra verticalmente*/
+    padding: 20px: /* espacio interno*/
+    background-color: #4a90e2; /*color de fondo*/
     
 }
 
-header img {
-    width: 80px;
-    height: 80px;
-    background: #333;
+/*grupo de la izquierda*/
+.header-left {
+    display: flex; /*logo y titulo en linea*/
+    align-items:center; /*centrados verticalmente*/
+    gap: 15px; /* espacio entre logo y titulo*/
+}
+
+.header-left img {
+    width: 80px; /* tamaño del logo*/
+    height:auto;
+    border-radius: 8px; /* bordes redondos del logo*/
     
 }
 
-header h1 {
-    color: #000;
+.header-left h1 {
+    margin: 0; /* quita maegen por defecto*/
+    color: #000000; /* color del titulo*/
     font-size: 24px;
 }
 /* actividad semana 4 estilo de reloj */
@@ -42,8 +50,10 @@ header h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 48px;
   color: #ffffff;
-  text-align:right;
-  margin-top: 20%;
+  background-color: rgba(0,0,0,0.3); /* fondo semitranspartente*/
+ padding: 10px 20px;
+ border-radius: 10px;
+ margin: 0;
 }
 
 /* NAV */
