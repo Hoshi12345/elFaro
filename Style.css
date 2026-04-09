@@ -37,6 +37,14 @@ header h1 {
     color: #000;
     font-size: 24px;
 }
+/* actividad semana 4 estilo de reloj */
+#reloj  {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 48px;
+  color: #ffffff;
+  text-align:right;
+  margin-top: 20%;
+}
 
 /* NAV */
 nav {
