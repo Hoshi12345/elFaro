@@ -16,6 +16,33 @@
         <!-- separo 2 divs para realizar flexbox en css y separar izq de derch. -->
             <!-- reloj de javascript  actividad semana 4 -->
          <div id="reloj">00:00:00</div>
+         <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="timer"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox">Remember Me
+                        </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="button">Login</button>
+                    <div class="login-registrer">
+                        <p>Dont have and account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+         </div>
     </header>
 
     <!-- NAV  -->
@@ -164,3 +191,5 @@
 
     <!-- script java reloj actividad semana 4 -->
      <script src="script.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
